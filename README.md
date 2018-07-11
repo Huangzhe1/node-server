@@ -9,7 +9,7 @@ var fs = require('fs')
 创建一个server，返回的是一个server对象，对象直接侦听8087端口
 >
 ```
-http.createServer(function(req,res){
+http.createServer(function(req,res){   //创建一个server，返回的是一个server对象，对象直接侦听8080端口。
     switch(req.url){
         case '/README.md':  
         res.end(fs.readFileSync(__dirname + '/README.md'))
