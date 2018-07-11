@@ -10,10 +10,10 @@ var fs = require('fs')
 >```
 http.createServer(function(req,res){
     switch(req.url){
-        case '/README.md':  //请求到了，需要处理对应的路由，路由就是localhost:8080 这个域名后面的那一堆东西。路由的本质是后端根据路由去做对应的事情。
-        res.end(fs.readFileSync(__dirname + '/README.md'))   //读这个文件
+        case '/README.md':  
+        res.end(fs.readFileSync(__dirname + '/README.md'))
         break;
-        default:            //如果没有匹配，就认为是静态文件 默认
+        default:            
         res.end(fs.readFileSync(__dirname + '/sample/test.html'))
     }
     }).listen(8087)
