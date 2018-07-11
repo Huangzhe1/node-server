@@ -7,7 +7,8 @@ var fs = require('fs')
 ```
 #step2#
 创建一个server，返回的是一个server对象，对象直接侦听8087端口
->```
+>
+```
 http.createServer(function(req,res){
     switch(req.url){
         case '/README.md':  
