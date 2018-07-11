@@ -1,11 +1,11 @@
-#step1#
+#step1
 获取http模块和fs模块
 >
 ```
 var http = require('http')
 var fs = require('fs')
 ```
-#step2#
+#step2
 创建一个server，返回的是一个server对象，对象直接侦听8087端口
 >
 ```
